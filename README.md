@@ -1,4 +1,4 @@
-# typescriptプロジェクト
+# TypeScriptプロジェクト
 **目的：** <br />
 TypeScritの学習のため
 <br />
