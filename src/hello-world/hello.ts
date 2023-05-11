@@ -47,3 +47,24 @@ const sample_c: MyObj2 = {
 };
 
 
+// 配列型
+const nums: number[] = [0, 1, 2, 3];
+nums.push(4);
+
+
+// 関数型
+// 第1引数としてstring型, 第2引数としてnumber型の引数を受け取る
+// 返り値としてboolean型の値を返す
+const e: (hoge: string, fuga: number)=> boolean = index1;
+
+function index1(name: string, age: number): boolean {
+  return true;
+}
+
+const f: (hoge: string)=> number = func;
+
+function func(arg: string): number {
+  return Number(arg);
+}
+
+
