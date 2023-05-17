@@ -86,13 +86,15 @@ const continent = {
 // } = continent;
 
 // オプショナルチェーン
-const book1 = undefined;
-const title1 = book1?.title;
+const book_js = undefined;  // js
+let book_ts: undefined | { title: string };  // ts
+
+const title1 = book_ts?.title;
 
 // 関数の呼び出し
-const increment1 = undefined;
-const result1 = increment1?.(1);
+const increment_js = undefined;  // js
+// const result = increment_js?.(1);
 
-const increment2 = (n) => n + 1;
-const result2 = increment2?.(1);
+const increment = (n: number) => n + 1;
+const result2 = increment?.(1);
 
