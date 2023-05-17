@@ -85,4 +85,14 @@ const continent = {
 //   us: { name, capitalCity },
 // } = continent;
 
+// オプショナルチェーン
+const book1 = undefined;
+const title1 = book1?.title;
+
+// 関数の呼び出し
+const increment1 = undefined;
+const result1 = increment1?.(1);
+
+const increment2 = (n) => n + 1;
+const result2 = increment2?.(1);
 
