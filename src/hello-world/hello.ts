@@ -67,4 +67,22 @@ function func(arg: string): number {
   return Number(arg);
 }
 
+// 分割代入
+// 任意の変数名を指定
+const color = { r: 0, g: 100, b: 90 };
+const { r: red, g: green, b: blue } = color;
+
+// 入れ子構造
+const continent = {
+  name: "北アメリカ",
+  us: {
+    name: "アメリカ合衆国",
+    capitalCity: "ワシントンD.C.",
+  },
+};
+
+// const {
+//   us: { name, capitalCity },
+// } = continent;
+
 
