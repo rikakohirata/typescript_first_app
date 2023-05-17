@@ -98,3 +98,20 @@ const increment_js = undefined;  // js
 const increment = (n: number) => n + 1;
 const result2 = increment?.(1);
 
+// 配列
+[1, 2, 3];
+
+[
+  1,
+  2,
+  3,
+]
+
+// 配列の型注釈
+let array1: number[];
+array1 = [1, 2, 3];
+
+let array2: Array<number>;
+array2 = [1, 2, 3];
+
+
