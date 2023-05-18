@@ -128,3 +128,10 @@ list[1].length;
 list[2].valueOf();
 
 
+// 列挙型 (enum)
+enum Position {
+  Top,
+  Right,
+  Bottom,
+  Left,
+}
