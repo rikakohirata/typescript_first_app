@@ -3,7 +3,6 @@ const message: string = 'Hello World';
 console.log(message);
 
 
-
 // プリミティブ型 
 // 以下以外に、symbol, bigint, null, undefined
 const int: number = 1;
@@ -98,6 +97,7 @@ const increment_js = undefined;  // js
 const increment = (n: number) => n + 1;
 const result2 = increment?.(1);
 
+
 // 配列
 [1, 2, 3];
 
@@ -113,5 +113,18 @@ array1 = [1, 2, 3];
 
 let array2: Array<number>;
 array2 = [1, 2, 3];
+
+
+// タプルの型
+const list: [number, string, boolean] = tuple();
+
+function tuple(): [number, string, boolean] {
+  return [1, 'OK', true];
+}
+
+// タプルへのアクセス
+list[0].toExponential();
+list[1].length;
+list[2].valueOf();
 
 
