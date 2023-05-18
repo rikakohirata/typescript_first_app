@@ -76,6 +76,32 @@ var list = tuple();
 function tuple() {
     return [1, 'OK', true];
 }
+// タプルへのアクセス
 list[0].toExponential();
 list[1].length;
 list[2].valueOf();
+// 列挙型 (enum)
+var Position;
+(function (Position) {
+    Position[Position["Top"] = 0] = "Top";
+    Position[Position["Right"] = 1] = "Right";
+    Position[Position["Bottom"] = 2] = "Bottom";
+    Position[Position["Left"] = 3] = "Left";
+})(Position || (Position = {}));
+// 文字列列挙型 (string enum)
+var Direction;
+(function (Direction) {
+    Direction["Up"] = "UP";
+    Direction["Down"] = "DOWN";
+    Direction["Left"] = "LEFT";
+    Direction["Right"] = "RIGHT";
+})(Direction || (Direction = {}));
+// ユニオン型 (union type)
+// いずれかの型を表現する
+var numberOrUndefined;
+// 絞り込み
+var maybeUserId = 'ユーザー１';
+if (typeof maybeUserId === "string") {
+    var userId = maybeUserId;
+    console.log(userId);
+}

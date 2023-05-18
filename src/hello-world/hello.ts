@@ -86,6 +86,7 @@ const continent = {
 
 // オプショナルチェーン
 const book_js = undefined;  // js
+
 let book_ts: undefined | { title: string };  // ts
 
 const title1 = book_ts?.title;
@@ -143,3 +144,28 @@ enum Direction {
   Left = "LEFT",
   Right = "RIGHT",
 }
+
+// ユニオン型 (union type)
+// いずれかの型を表現する
+let numberOrUndefined: number | undefined;
+
+// 冒頭に書いてもOK
+type ErrorCode =
+  | 400
+  | 401
+  | 402
+  | 403
+  | 404
+  | 405;
+
+// 配列要素にユニオン型を使う際、()で囲む
+// string[] or number[]
+type List = (string | number)[];
+
+// 絞り込み
+const maybeUserId: string | null = 'ユーザー１';
+if (typeof maybeUserId === "string") {
+  const userId: string = maybeUserId;
+  console.log(userId);  // => ユーザー１
+}
+
