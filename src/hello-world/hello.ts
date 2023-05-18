@@ -135,3 +135,11 @@ enum Position {
   Bottom,
   Left,
 }
+
+// 文字列列挙型 (string enum)
+enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT",
+}
