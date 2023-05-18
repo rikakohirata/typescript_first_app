@@ -193,3 +193,32 @@ type UploadStatus = InProgress | Success | Failure;
 type InProgress = { type: "InProgress"; progress: number };
 type Success = { type: "Success" };
 type Failure = { type: "Failure"; error: Error };
+
+
+// インターセクション型
+type TwoDimensionalPoint = {
+  x: number;
+  y: number;
+};
+
+type Z = {
+  z: number;
+};
+
+type ThreeDimensionalPoint = TwoDimensionalPoint & Z;
+
+const p: ThreeDimensionalPoint = {
+  x: 0,
+  y: 1,
+  z: 2,
+};
+
+// typeキーワード
+type UserID = string;
+type UserName = string;
+
+function getUser(id: UserID): { id: UserID; name: UserName } {
+  return user;
+}
+
+const user: { id: UserID; name: UserName } = getUser("12345");
